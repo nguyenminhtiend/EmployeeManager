@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html ng-app="employeesApp">
+<head>
+    <!--load style-->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/animations.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/loading-bar.css" rel="stylesheet" />
+
+    <!--load libraly-->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="Scripts/angular-local-storage.min.js"></script>
+    <script src="Scripts/loading-bar.js"></script>
+    <script src="app/employeesApp/app.js"></script>
+
+    <!--load service-->
+    <script src="app/employeesApp/services/modalService.js"></script>
+    <script src="app/employeesApp/services/employeesService.js"></script>
+    <script src="app/employeesApp/services/authService.js"></script>
+    <script src="app/employeesApp/services/authInterceptorService.js"></script>
+    <script src="app/employeesApp/services/httpInterceptorService.js"></script>
+    <script src="app/employeesApp/services/fileUploadService.js"></script>
+
+    <!--load directive-->
+    <script src="app/employeesApp/directives/loaderDirective.js"></script>
+    <script src="app/employeesApp/directives/sortHeaderDirective.js"></script>
+    <script src="app/employeesApp/directives/testDirective.js"></script>
+    <script src="app/employeesApp/directives/checkUniqueDirective.js"></script>
+    <script src="app/employeesApp/directives/compareToDirective.js"></script>
+    <script src="app/employeesApp/directives/fileModelDirective.js"></script>
+
+    <!--load controller-->
+    <script src="app/employeesApp/controllers/narbarController.js"></script>
+    <script src="app/employeesApp/controllers/employeesController.js"></script>
+    <script src="app/employeesApp/controllers/employeeDetailController.js"></script>
+    <script src="app/employeesApp/controllers/authController.js"></script>
+    <script src="app/employeesApp/controllers/contactController.js"></script>
+    <script src="app/employeesApp/controllers/errorController.js"></script>
+    
+    <link rel="shortcut icon" type="image/icon" href="~/Content/images/favicon.ico" />
+    <title>Employee Management</title>
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" ng-controller="narbarController">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/"><span class="glyphicon glyphicon-home"></span> Employee</a>
+                    </li>
+                    <li>
+                        <a href="#/addNewEmployee">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add New Employee
+                        </a>
+                    </li>
+                    <li><a href="#/contact"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-if="!isAuthenticated"><a href="#/login"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Login</a></li>
+                    <li ng-if="!isAuthenticated"><a href="#/register"><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> Register</a></li>
+                    <li ng-if="isAuthenticated"><a href="">Hello, {{username}}</a></li>
+                    <li ng-if="isAuthenticated" ng-click="logout()"><a href=""><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div loader></div>
+    <div class="slide-animation-container custom-body">
+        <div ng-view id="ng-view" class="container slide-animation"></div>
+    </div>
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a>Copy right  <span class="glyphicon glyphicon-registration-mark"></span>  Lionel Messi</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a>Contact: nguyenminhtiend@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

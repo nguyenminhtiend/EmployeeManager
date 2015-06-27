@@ -1,0 +1,89 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <button class="btn btn-default" ng-class="{'active': showGrid}" ng-click="showGrid = true">
+            <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default" ng-class="{'active': !showGrid}" ng-click="showGrid = false">
+            <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+        </button>
+    </div>
+    <div class="col-md-4">
+        <div class="input-group">
+            <input type="text" placeholder="Input First Name or Last Name" ng-model="pageRequest.searchTerm" ng-keypress="search($event)" class="form-control" name="Phone" ng-model="employee.Phone">
+            <span class="input-group-addon" style="cursor: pointer;" ng-click="clickSearch()"><span class="glyphicon glyphicon-search"></span></span>
+        </div>
+    </div>
+    <div class="col-md-2">
+        <select class="form-control" ng-model="pageRequest.itemPerPage" ng-change="itemPerPageChanged()" style="width: auto; float: right;">
+            <option>10</option>
+            <option>25</option>
+            <option>50</option>
+            <option>100</option>
+        </select>
+    </div>
+</div>
+<div class="row" ng-if="showGrid">
+    <div class="col-md-12">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th ng-repeat="column in columns" ng-click="sort_by(column.name)">
+                        {{ column.title }}
+                        <i ng-show="column.sortable" ng-class="{'fa fa-sort-asc':column.name == pageRequest.sortColumn && pageRequest.sortAscending,
+                                'fa fa-sort-desc':column.name == pageRequest.sortColumn && !pageRequest.sortAscending,
+                                 'fa fa-sort':column.name != pageRequest.sortColumn}"></i>
+                    </th>
+                <tr />
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td style="text-align: center"><a href="#/editEmployee/{{employee.id}}"><img ng-src="{{baseUrl + employee.avatar}}" class="cardImage" alt="Customer Image" /></a></td>
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td>
+                    <td>{{employee.email}}</td>
+                    <td>{{employee.phone}}</td>
+                    <td>{{employee.birthday | date:'dd/MM/yyyy'}}</td>
+                    <td>{{employee.department}}</td>
+                    <td>
+                        <a class="btn btn-primary btn-xs" href="#/editEmployee/{{employee.id}}">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit
+                        </a>
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="deleteEmployee(employee.id)">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row" ng-if="!showGrid">
+    <div class="col-sm-6 col-md-4" ng-repeat="employee in employees">
+        <div class="card">
+            <button class="btn close cardClose" title="Delete Employee" ng-click="deleteEmployee(employee.id)">&times;</button>
+            <div class="cardHeader"><a href="#/editEmployee/{{employee.id}}" class="white">{{employee.firstName + ' ' + employee.lastName}} <i class="icon-edit icon-white editIcon"></i></a></div>
+            <div class="cardBody">
+                <div class="clearfix">
+                    <div class="pull-left cardBodyLeft">
+                        <a href="#/editEmployee/{{employee.id}}" class="white"><img ng-src="{{baseUrl + employee.avatar}}" class="cardImage-big" alt="Customer Image" /></a>
+                    </div>
+                    <div class="pull-left cardBodyRight">
+                        <div class="cardBodyContent"><b>Email:</b> {{employee.email}}</div>
+                        <div class="cardBodyContent"><b>Phone:</b> {{employee.phone}}</div>
+                        <div class="cardBodyContent"><b>Birthday:</b> {{employee.birthday | date:'dd/MM/yyyy'}}</div>
+                        <div class="cardBodyContent"><b>Department:</b> {{employee.department}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <p>{{showInfo}}</p>
+    </div>
+    <div class="col-md-8 custom-right">
+        <pagination total-items="pageInfo.totalItems" ng-change="pageChanged()" items-per-page="pageRequest.itemPerPage" ng-model="pageInfo.currentPage" max-size="pageInfo.maxSize" class="pagination" boundary-links="true" rotate="false" num-pages="numPages"></pagination>
+    </div>
+</div>

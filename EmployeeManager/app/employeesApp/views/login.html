@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <form name="loginForm" novalidate>
+        <div class="panel panel-default form-login">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="font-size: 22px; color: #34495e;">Log in</h3>
+            </div>
+            <div class="panel-body">
+                <div class="alert alert-danger" role="alert" ng-show="error">
+                    The email or password is not correct!!
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-user" style="margin-right: 10px;"></span>
+                    <label for="email">Email:</label>
+                    <input class="form-control" name="email" ng-model="userLogin.email" type="text" required>
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock" style="margin-right: 10px;"></span>
+                    <label for="password">Password:</label>
+                    <input class="form-control" name="password" ng-model="userLogin.password" type="password" required ng-minlength="6">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid" ng-click="login()" style="float: right;">Log in</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

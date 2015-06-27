@@ -1,0 +1,41 @@
+D:\Working\Self Study\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll
+D:\Working\Self Study\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.pdb
+D:\Working\Self Study\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+D:\Working\Self Study\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.dll
+D:\Working\Self Study\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.pdb
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll.config
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.pdb
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.dll
+D:\Working\NET\Projects\Angular\CustomerManagerStandard-master\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.pdb
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.pdb
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.dll
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.pdb
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll.config
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.pdb
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.dll
+C:\Users\Admin\SkyDrive\Projects\CustomerManagerStandard-master\EmployeeManager\obj\Debug\EmployeeManager.pdb
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\CustomerManagerStandard-master\EmployeeManager\bin\EmployeeManager.dll.config
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.pdb
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.dll
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.pdb
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll.config
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.pdb
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.dll
+C:\Users\Admin\SkyDrive\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.pdb
+C:\Users\Tien.NguyenMinh\OneDrive\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll.config
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll.config
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.dll
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\bin\EmployeeManager.pdb
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.csprojResolveAssemblyReference.cache
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.dll
+D:\Working\NET\Projects\EmployeeManager\EmployeeManager\obj\Debug\EmployeeManager.pdb

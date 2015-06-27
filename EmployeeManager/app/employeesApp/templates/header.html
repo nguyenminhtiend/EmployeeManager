@@ -1,0 +1,8 @@
+﻿<tr>
+<th ng-repeat="header in headers" ng-click="sort({column:header})">{{ header }}<span>{{sortColumn}}</span>
+                        <i ng-class="{'fa fa-sort-asc':header == sortColumn && sortAscending,
+                                'fa fa-sort-desc':header == sortColumn && !sortAscending,
+                                 'fa fa-sort':header != sortColumn}"></i>
+    </th>
+    <th></th>
+<tr />

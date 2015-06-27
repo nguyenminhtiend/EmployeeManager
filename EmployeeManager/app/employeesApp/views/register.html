@@ -1,0 +1,32 @@
+﻿<div class="container">
+    <form name="registerForm" novalidate>
+        <div class="panel panel-default form-login">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="font-size: 22px; color: #34495e;">Register</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-user" style="margin-right: 10px;"></span>
+                    <label for="email">Email:</label>
+                    <input class="form-control" name="email" ng-class="{error: registerForm.email.$touched && registerForm.email.$invalid}" ng-model="userRegister.email" type="email" required>
+                    <span class="errorMessage" ng-show="registerForm.email.$error.email">Invalid email address.</span>
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock" style="margin-right: 10px;"></span>
+                    <label for="password">Password:</label>
+                    <input class="form-control" name="password" ng-model="userRegister.password" type="password" required ng-minlength="6">
+                </div>
+                <div class="form-group">
+                    <span class="glyphicon glyphicon-lock" style="margin-right: 10px;"></span>
+                    <label for="password">Password Confirm:</label>
+                    <input class="form-control" name="confirmPassword" ng-model="userRegister.confirmPassword" compare-to="userRegister.password" type="password" required ng-minlength="6">
+                    <span class="errorMessage" ng-show="registerForm.confirmPassword.$error.compareTo">Confirm password does not match the password!</span>
+                </div>
+                <div class="checkbox">
+                    <button type="submit" class="btn btn-primary" ng-disabled="registerForm.$invalid" ng-click="register()" style="float: right;">Register</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
