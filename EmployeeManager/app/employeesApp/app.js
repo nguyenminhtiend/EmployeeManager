@@ -41,7 +41,6 @@
             })
             .otherwise({ redirectTo: '/' });
     }]);
-    //baseUrl: 'http://employee-management-api.somee.com/',
     app.constant('appSetting',
     {
         baseUrl: 'http://localhost:6789/',
@@ -53,7 +52,7 @@
         $rootScope.baseUrl = appSetting.baseUrl + 'Resources/Images/';
     }]);
 
-    app.config(function ($httpProvider) {
+    app.config(['$httpProvider', function ($httpProvider) {
         $httpProvider.interceptors.push('httpInterceptor');
-    });
+    }]);
 })();
