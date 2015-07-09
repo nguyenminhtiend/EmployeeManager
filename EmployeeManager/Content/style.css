@@ -151,6 +151,10 @@ table {
     .cardBodyContent:last-child {
         border-bottom: none;
     }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
 
 .navbar-default {
     background-color: #375a7f;

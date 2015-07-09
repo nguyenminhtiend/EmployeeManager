@@ -1,12 +1,12 @@
 ﻿(function () {
     'use strict';
 
-    var injectParams = ['$scope', 'fileUploadService'];
+    var injectParams = ['$scope'];
 
-    var contactController = function ($scope, fileUploadService) {
+    var contactController = function ($scope) {
 
         $scope.$watch('aModel', function (newValue, oldValue) {
-            alert(newValue + '-' + oldValue);
+            alert(newValue + '222-333' + oldValue);
         });
     };
 
