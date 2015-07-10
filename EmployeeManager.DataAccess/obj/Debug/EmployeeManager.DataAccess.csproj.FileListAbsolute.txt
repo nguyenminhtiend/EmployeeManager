@@ -28,3 +28,13 @@ D:\Working\NET\Projects\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\Ent
 D:\Working\NET\Projects\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.csprojResolveAssemblyReference.cache
 D:\Working\NET\Projects\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.dll
 D:\Working\NET\Projects\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.pdb
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EmployeeManager.DataAccess.dll.config
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EmployeeManager.DataAccess.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EmployeeManager.DataAccess.pdb
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EntityFramework.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EntityFramework.xml
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.csprojResolveAssemblyReference.cache
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.DataAccess\obj\Debug\EmployeeManager.DataAccess.pdb
