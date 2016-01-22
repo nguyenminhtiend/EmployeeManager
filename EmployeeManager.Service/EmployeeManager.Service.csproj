@@ -48,7 +48,6 @@
     <Compile Include="Services\Contracts\IEmployeeService.cs" />
     <Compile Include="Services\Contracts\IUserService.cs" />
     <Compile Include="Services\EmployeeService.cs" />
-    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EmployeeManager.DataAccess\EmployeeManager.DataAccess.csproj">

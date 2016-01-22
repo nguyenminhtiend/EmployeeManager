@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EmployeeManager.DataAccess.Entities
 {
-    public class User : BaseEntity
+    public class User : IdentityUser
     {
         public string Email { get; set; }
-        public string PasswordHash { get; set; }
-        public ICollection<UserRole> Roles { get; set; }
     }
 }

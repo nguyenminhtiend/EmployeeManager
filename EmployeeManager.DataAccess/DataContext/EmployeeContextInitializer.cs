@@ -4,8 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using EmployeeManager.DataAccess.Entities;
-using EmployeeManager.DataAccess.Utility;
 using EmployeeManager.DataAccess.Utility.Constant;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace EmployeeManager.DataAccess.DataContext
 {
@@ -61,18 +62,15 @@ namespace EmployeeManager.DataAccess.DataContext
                     Phone = GetRandomTelNo(random)
                 });
             }
-            context.Users.Add(new User
-            {
-                Email = "admin@gmail.com",
-                PasswordHash = PasswordHashHelper.HashPassword("111111"),
-                Roles = new List<UserRole> { new UserRole { RoleName = Role.Admin } }
-            });
-            context.Users.Add(new User
-            {
-                Email = "user@gmail.com",
-                PasswordHash = PasswordHashHelper.HashPassword("111111"),
-                Roles = new List<UserRole> { new UserRole { RoleName = Role.User} }
-            });
+
+            var userManager = new UserManager<User>(new UserStore<User>(context));
+            userManager.Create(new User { UserName = "admin", Email = "admin@gmail.com" }, "111111");
+            userManager.Create(new User { UserName = "user", Email = "user@gmail.com" }, "111111");
+
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            roleManager.Create(new IdentityRole(Role.Admin));
+            roleManager.Create(new IdentityRole(Role.User));
+            
             context.SaveChanges();
             base.Seed(context);
         }

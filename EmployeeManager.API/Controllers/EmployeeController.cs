@@ -17,7 +17,6 @@ namespace EmployeeManager.API.Controllers
         {
             this.employeeService = employeeService;
         }
-        [Authorize]
         [Route("api/employee/getDepartments")]
         public IEnumerable<DropDownListModel> GetAllDepartments()
         {

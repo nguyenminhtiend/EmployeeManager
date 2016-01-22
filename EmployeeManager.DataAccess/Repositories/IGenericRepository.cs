@@ -13,6 +13,5 @@ namespace EmployeeManager.DataAccess.Repositories
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(int id);
-        
     }
 }

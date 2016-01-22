@@ -34,3 +34,7 @@ D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\bin\Debug\EntityFr
 D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\obj\Debug\EmployeeManager.Service.csprojResolveAssemblyReference.cache
 D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\obj\Debug\EmployeeManager.Service.dll
 D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\obj\Debug\EmployeeManager.Service.pdb
+D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Working\Self Study\EmployeeManager\EmployeeManager.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
